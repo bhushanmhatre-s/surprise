@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy New Year from NxtWave</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom, #1e3c72, #2a5298);
+            color: white;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        h1 {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            text-shadow: 0 0 10px #fff, 0 0 20px #ff9, 0 0 30px #ff6, 0 0 40px #f3c;
+            animation: glow 2s infinite alternate;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            color: #ffdfba;
+        }
+
+        p {
+            font-size: 1.5rem;
+            margin-bottom: 50px;
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 10px #fff, 0 0 20px #ff9, 0 0 30px #ff6, 0 0 40px #f3c;
+            }
+            to {
+                text-shadow: 0 0 20px #fff, 0 0 30px #ff9, 0 0 40px #ff6, 0 0 50px #f3c;
+            }
+        }
+
+        .sparkle {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background: white;
+            border-radius: 50%;
+            opacity: 0;
+            animation: sparkle 3s infinite;
+        }
+
+        @keyframes sparkle {
+            0%, 100% {
+                opacity: 0;
+                transform: scale(0.5) translate(0, 0);
+            }
+            50% {
+                opacity: 1;
+                transform: scale(1.5) translate(30px, -50px);
+            }
+        }
+
+        .sparkle:nth-child(1) {
+            top: 10%;
+            left: 20%;
+            animation-delay: 0s;
+        }
+
+        .sparkle:nth-child(2) {
+            top: 50%;
+            left: 60%;
+            animation-delay: 0.5s;
+        }
+
+        .sparkle:nth-child(3) {
+            top: 70%;
+            left: 30%;
+            animation-delay: 1s;
+        }
+
+        .sparkle:nth-child(4) {
+            top: 30%;
+            left: 80%;
+            animation-delay: 1.5s;
+        }
+    </style>
+</head>
+<body>
+    <h1>Happy New Year from NxtWave</h1>
+    <h2>2025 is loading...</h2>
+    <p>May the year ahead bring you plenty of love, joy, wellbeing and prosperity.</p>
+    <div class="sparkle"></div>
+    <div class="sparkle"></div>
+    <div class="sparkle"></div>
+    <div class="sparkle"></div>
+</body>
+</html>
